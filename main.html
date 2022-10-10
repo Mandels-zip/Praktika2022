@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Задача 1.1 -->
+    <form action="task1.php" method="post">
+        <!-- Input -->
+        <p>Как вас зовут?</p>
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname"> <br>
+            <label for="fname">Second name</label>
+            <input type="text" id="sname" name="sname"> <br>
+        
+        <!-- Radio -->
+        <p>Сколько вам лет?</p>
+            <input type="radio" id="age1" value="18-24" name="age">
+            <label for="age1">18-24</label><br>
+            <input type="radio" id="age2" value="25-35" name="age" >
+            <label for="age2">25-35</label><br>
+            <input type="radio" id="age3" value="36+" name="age">
+            <label for="age3">36+</label>
+
+        <!-- Checkbox -->
+        <p> На каком языке программировования вы пробовали писать?</p>
+            <input type="checkbox" value="Python" name="checklist[]">
+            <label for="proglang1"> Python</label><br>
+            <input type="checkbox" value="Java" name="checklist[]">
+            <label for="proglang2"> Java</label><br>
+            <input type="checkbox" value="C#" name="checklist[]">
+            <label for="proglang3"> C#</label>
+        
+        <!-- select -->
+        <p> Выберите наиболее понравившийся</p>
+            <select name="fav_lang" id="fav_lang">
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+            </select>
+            
+        <!-- Textarea -->
+        <p>Что вы думаете о опросе?</p>
+            <textarea name="opinion" id="ta1" cols="30" rows="10"></textarea> <br>
+
+        <input type="submit">
+    </form>
+
+    <!-- Задача 2 -->
+    <form action="task2.php" method="post" enctype="multipart/form-data"> 
+        <input type="file" name="uploadfile">
+        <input type="submit" value="Загрузить файл">
+    </form>
+
+</body>
+</html>
