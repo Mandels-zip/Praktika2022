@@ -11,6 +11,8 @@ foreach($_POST['checklist'] as $selected){
 }
 
 echo "Мой любимый язык ".$_POST['fav_lang']. "<br>";
-echo $_POST['opinion'];
+echo $_POST['opinion']. "<br>";
+
+echo "Вы загрузили файл " .$_FILES['uploadfile']['name']. "<br>Он весит ".$_FILES['uploadfile']['size']. "байт"; 
      
  ?>

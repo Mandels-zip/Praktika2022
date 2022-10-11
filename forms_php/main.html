@@ -8,17 +8,17 @@
 </head>
 <body>
     <!-- Задача 1.1 -->
-    <form action="task1.php" method="post">
+    <form action="task1.php" method="post" enctype="multipart/form-data">
         <!-- Input -->
-        <p>Как вас зовут?</p>
+        <p>Как вас зовут? *</p>
             <label for="fname">First name</label>
-            <input type="text" id="fname" name="fname"> <br>
+            <input required type="text" id="fname" name="fname"> <br>
             <label for="fname">Second name</label>
-            <input type="text" id="sname" name="sname"> <br>
+            <input required type="text" id="sname" name="sname"> <br>
         
         <!-- Radio -->
-        <p>Сколько вам лет?</p>
-            <input type="radio" id="age1" value="18-24" name="age">
+        <p>Сколько вам лет? *</p>
+            <input required type="radio" id="age1" value="18-24" name="age">
             <label for="age1">18-24</label><br>
             <input type="radio" id="age2" value="25-35" name="age" >
             <label for="age2">25-35</label><br>
@@ -36,7 +36,7 @@
         
         <!-- select -->
         <p> Выберите наиболее понравившийся</p>
-            <select name="fav_lang" id="fav_lang">
+            <select required name="fav_lang" id="fav_lang">
                 <option value="Python">Python</option>
                 <option value="Java">Java</option>
                 <option value="C#">C#</option>
@@ -46,14 +46,14 @@
         <p>Что вы думаете о опросе?</p>
             <textarea name="opinion" id="ta1" cols="30" rows="10"></textarea> <br>
 
+        <!-- Добавьте файл -->
+        <input type="file" name="uploadfile" accept="image/*, .docx,.pdf"> <br>
+
         <input type="submit">
     </form>
 
     <!-- Задача 2 -->
-    <form action="task2.php" method="post" enctype="multipart/form-data"> 
-        <input type="file" name="uploadfile">
-        <input type="submit" value="Загрузить файл">
-    </form>
+    
 
 </body>
 </html>
