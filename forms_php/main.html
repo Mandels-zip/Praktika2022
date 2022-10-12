@@ -7,32 +7,33 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- Задача 1.1 -->
+
     <form action="task1.php" method="post" enctype="multipart/form-data">
+
         <!-- Input -->
         <p>Как вас зовут? *</p>
-            <input required type="text" id="fname" name="fname" placeholder="Имя"> <br>
-            <input required type="text" id="sname" name="sname" placeholder="Фамилия"> <br>
+            <input required type="text" name="fname" placeholder="Имя"> <br>
+            <input required type="text" name="sname" placeholder="Фамилия"> <br>
         
         <!-- Radio -->
         <p>Сколько вам лет? *</p>
             <input required type="radio" id="age1" value="18-24" name="age">
-            <label for="age1">18-24</label><br>
+                <label for="age1">18-24</label><br>
             <input type="radio" id="age2" value="25-35" name="age" >
-            <label for="age2">25-35</label><br>
+                <label for="age2">25-35</label><br>
             <input type="radio" id="age3" value="36+" name="age">
-            <label for="age3">36+</label>
+                <label for="age3">36+</label>
 
         <!-- Checkbox -->
         <p> На каком языке программировования вы пробовали писать?</p>
             <input type="checkbox" value="Python" name="checklist[]" id="proglang1">
-            <label for="proglang1"> Python</label><br>
+                <label for="proglang1"> Python</label><br>
             <input type="checkbox" value="Java" name="checklist[]" id="proglang2">
-            <label for="proglang2"> Java</label><br>
+                <label for="proglang2"> Java</label><br>
             <input type="checkbox" value="C#" name="checklist[]" id="proglang3">
-            <label for="proglang3"> C#</label>
+                <label for="proglang3"> C#</label>
         
-        <!-- select -->
+        <!-- Select -->
         <p> Выберите наиболее понравившийся</p>
             <select required name="fav_lang" id="fav_lang">
                 <option value="Python">Python</option>
@@ -44,13 +45,11 @@
         <p>Что вы думаете о опросе?</p>
             <textarea name="opinion" id="ta1" cols="30" rows="10"></textarea> <br>
         
-        <!-- Задача 2 -->
         <!-- Добавьте файл -->
         <p>Загрузите ваш файл</p>
-        <label for="inputfile">Выберите документ или pdf файл вышей любимой книги по программированию, или картинку с ее обложкой</label> <br>
+            <label for="inputfile">Выберите документ или pdf файл вышей любимой книги по программированию, или картинку с ее обложкой</label> <br>
         <input id="inputfile"type="file" name="uploadfile" required accept="image/*, .docx,.pdf"> <br>
         
-
         <input type="submit">
     </form>
     
