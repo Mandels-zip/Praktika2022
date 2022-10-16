@@ -9,7 +9,7 @@ foreach($_POST['checklist'] as $selected){
     echo "<li>" .$selected. "</li>";
 }
 
-echo "Мой любимый язык ".$_POST['fav_lang']. "<br>";
+echo "Мой любимый язык ".$_POST['fav_lang']. "<br> Моя оценка опросу " .$_POST['grade']. "<br>";
 echo $_POST['opinion']. "<br>";
 
 if (!file_exists($_FILES['uploadfile']['tmp_name']) || !is_uploaded_file($_FILES['uploadfile']['tmp_name']))
