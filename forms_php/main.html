@@ -66,14 +66,14 @@
                     <!-- Range -->
                     <div class="mb-2 col-12 col-md-auto">
                         <h6 class="fw-normal" >Оцените опрос</h6>
-                            <div class="d-flex justify-content-between">
+                            <div class="mx-1 d-flex justify-content-between">
                               <span>1</span>
                               <span>2</span>
                               <span>3</span>
                               <span>4</span>
                               <span>5</span>
                             </div>
-                        <input type="range" class="form-range" min="1" max="5" list="marks" name="grade">
+                        <input type="range" class="form-range" min="1" max="5" name="grade" >
                     </div>
 
                     <!-- Textarea -->
@@ -95,8 +95,9 @@
                 
             </div>
 
-            <input class="btn btn-info text-white col-12 mb-3" type="submit">
-
+            <div class=" d-flex flex-row justify-content-md-end justify-content-center">
+             <input class="btn btn-info text-white col-8 col-md-2 mb-3" type="submit">
+            </div>
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
                 Пожалуйста, заполните все обязательные поля перед отправкой формы
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
